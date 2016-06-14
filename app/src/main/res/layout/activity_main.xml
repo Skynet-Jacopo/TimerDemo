@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.liuqun.timerdemo.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-24dp"
+        android:src="@mipmap/clock_hdpi"/>
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="00:00"
+        android:textSize="126dp"/>
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/toggle_selector"
+        android:text="New ToggleButton"
+        android:textOff=""
+        android:textOn=""/>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButton"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/music_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/music_pause"/>
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/music_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/music_continue"/>
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/music_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/music_stop"/>
+    </LinearLayout>
+</RelativeLayout>
